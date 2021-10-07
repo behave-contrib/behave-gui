@@ -54,7 +54,7 @@ From the `btc_backend` folder, run the following command to start both the front
 npm run startall
 ```
 
-The above command will alow you to view and run an example test in your web browser at: <http://localhost:3000/?feature=/features/examples/trivial.feature>
+The above command will alow you to view and run an example test in your web browser at: <http://localhost:3000/?feature=/features/examples/documentation.feature>
 
 ## Usage
 
