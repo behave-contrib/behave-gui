@@ -17,7 +17,7 @@ Btc-Gui is fully compatible with standard Behave folder structures and configura
 
 ## Dependencies
 
-Btc-Gui requires Python and [Behave](https://behave.readthedocs.io/en/stable/). You can Behave with this command: 
+Btc-Gui requires Python 3 and [Behave](https://behave.readthedocs.io/en/stable/). You can Behave with this command: 
 
 ```bash
 python -m pip install behave
@@ -63,6 +63,14 @@ The above command will alow you to view and run an example test in your web brow
 - You can use intelligent completion within a feature by typing a word and pressing ctrl+spacebar. A dropdown list will appear with matching steps.
 - When you edit a file, a save feature button will appear allowing you to save your changes.
 - Pressing "Run feature" will execute your feature. You will see log output under the "Console log" tab.
+
+## Troubleshooting
+If step definitions fail to load and you see an error like the following at the console, you need to set the path to your Python 3 executable in `btc_backend/config/default.json` (see 'Configuration', above):
+```bash
+btc_backend/runFeatures.py", line 2, in <module>
+    import configparser
+ImportError: No module named configparser
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
