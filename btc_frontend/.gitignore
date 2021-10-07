@@ -1,0 +1,6 @@
+.prettierrc
+.vscode/
+node_modules/
+.npm/
+build/
+

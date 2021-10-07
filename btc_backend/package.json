@@ -1,0 +1,29 @@
+{
+  "name": "btc_backend",
+  "version": "0.1.0",
+  "description": "Btc backend server",
+  "main": "server.js",
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "io-session-handler": "^1.0.74",
+    "line-reader": "^0.4.0",
+    "n-readlines": "^1.0.1",
+    "node-cache": "^5.1.2",
+    "ps-node": "^0.1.6",
+    "python-shell": "^3.0.0",
+    "rxjs": "^7.4.0",
+    "socket.io": "^2.4.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startall": "set BROWSER=NONE&& npm start --prefix ../btc_frontend/ | npm start",
+    "startfilman": "npm start --prefix ../btc_featurenav/"
+  },
+  "author": "",
+  "license": "MIT"
+}

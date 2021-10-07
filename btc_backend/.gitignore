@@ -1,0 +1,10 @@
+*.pyc
+*.log
+node_modules
+*\toolbox
+mappings/
+reports/
+*.egg-info
+*.ropeproject/
+*$py.class
+.vscode

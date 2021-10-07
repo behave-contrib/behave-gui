@@ -1,0 +1,5 @@
+{
+  "checkMachineAvailable": false,
+  "kibanaUrl" : false,
+  "showProgressBarRegex": "\\.{3,}"
+}
