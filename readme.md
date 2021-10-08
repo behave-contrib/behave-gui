@@ -19,7 +19,7 @@ Btc-Gui is fully compatible with standard Behave folder structures and configura
 
 ## Dependencies
 
-Btc-Gui requires Python 3 and [Behave](https://behave.readthedocs.io/en/stable/). You can Behave with this command: 
+Btc-Gui requires Python 3 and [Behave](https://behave.readthedocs.io/en/stable/). You can install Behave with this command: 
 
 ```bash
 python -m pip install behave
@@ -32,7 +32,8 @@ Btc-Gui also requires [Node.js](https://nodejs.org) for its runtime and for the 
 The Btc-Gui top-level folder is divided into two subfolders, `btc_backend` and `btc_frontend`. Execute the following `npm` command in each of the two folders to install:
 
 ```bash
-npm install
+btc_frontend$ npm install
+btc_backend$ npm install
 ```
 
 ## Configuration
