@@ -21,8 +21,9 @@ class StepSearch extends Component {
     this.downshiftCtrl.current.clearSelection();
   };
   getNavigateUrl = (item) => {
+    const root = "index.html?feature=";
     const target = new URL(window.location).searchParams.get("target");
-    return `index.html?feature=/${item.file}&target=${target}`;
+    return target ? `${root}/${item.file}&target=${target}` : `${root}/${item.file}`;
   }
   render() {
     const fileOptionItems = this.props.fileFilterOptions.map(opt => (
