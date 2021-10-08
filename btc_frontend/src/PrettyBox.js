@@ -4,20 +4,32 @@ import hljs from "highlight.js";
 import "highlight.js/styles/googlecode.css"
 import python from "highlight.js/lib/languages/python";
 
-hljs.registerLanguage("python", python);
-
 class PrettyBox extends PureComponent {
-    componentDidMount() {
-        hljs.highlightAll();
+    constructor(props) {
+        super(props);
+        this.codeBlock = React.createRef();
+
+        //Stop warnings spamming console. 
+        //See issue: https://github.com/highlightjs/highlight.js/issues/2886
+        hljs.configure({ ignoreUnescapedHTML: true });
+
+        hljs.registerLanguage("python", python);
     }
+
+    componentDidMount() {
+        hljs.highlightElement(this.codeBlock.current);
+    }
+
     render() {
         return (
             <div>
-                <pre className="prettyprint">
-                    <code className="language-python">
+                <pre className="prettyprint"
+                    ref={this.codeBlock}
+                >
+                    <div>
                         {this.props.fileName + "\n"}
                         {this.props.code}
-                    </code>
+                    </div>
                 </pre>
             </div>
         );
