@@ -1,5 +1,7 @@
 # Btc-Gui - Behave Test Constellation Gui
 
+Copyright (c) 2021-present Tomra Systems ASA.
+
 Btc-Gui is a web interface for Python [Behave](https://behave.readthedocs.io/en/stable/). It:
   - displays test step implementations alongside feature files
   - helps you write new feature files by letting you search for existing test step implementations to see how they are used in other feature files 
