@@ -74,7 +74,7 @@ const getCodeSnippets = (fileReferences) => {
                 lineNumber++;
                 if (lineNumber >= fileAndLine[1]) {
 
-                    lineContent = line.toString('utf-8').trimEnd();
+                    lineContent = line.toString("utf-8").trimEnd();
 
                     if (lineContent == "") {
                         snippets.push({ fileName: `#${ref}`, content: currentFileContent });
