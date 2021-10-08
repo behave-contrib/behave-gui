@@ -1,6 +1,7 @@
 /* Copyright (c) 2021-present Tomra Systems ASA */
 import io from "socket.io-client";
 import config from "./config/config.json"
+
 const randomId = () => Math.random().toString(36).substr(2, 5);
 
 let host;
@@ -90,4 +91,4 @@ onmessage = (e) => {
   if (e.data.type === "kill") {
     socket.emit("kill");
   }
-}
+}  

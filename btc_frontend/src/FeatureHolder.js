@@ -15,7 +15,7 @@ import "ace-builds/src-noconflict/mode-gherkin";
 import "ace-builds/src-noconflict/theme-github";
 import "ace-builds/src-noconflict/ext-searchbox";
 import "ace-builds/src-noconflict/ext-language_tools";
-import Worker from "./ws.worker.js"
+import workerUrl from "worker-plugin/loader!./ws.worker.js";
 
 class FeatureHolder extends Component {
   constructor() {
@@ -140,7 +140,7 @@ class FeatureHolder extends Component {
       outerScope.hideProgressBar(null);
     });
 
-    this.worker = new Worker();
+    this.worker = new Worker(workerUrl);
     this.worker.postMessage({ type: "doinit", hostname: this.hostname });
     this.worker.onmessage = (e) => {
       const job = e.data

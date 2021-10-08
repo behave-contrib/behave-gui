@@ -1,7 +1,9 @@
 {
   "name": "btc_backend",
-  "version": "0.1.0",
   "description": "Btc backend server",
+  "version": "0.1.0",
+  "author": "James Westfall <james.vestfall@gmail.com> for Tomra Systems ASA (https://www.tomra.com)",
+  "license": "MIT",
   "main": "server.js",
   "dependencies": {
     "bunyan": "^1.8.15",
@@ -21,9 +23,6 @@
   "optionalDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startall": "set BROWSER=NONE&& npm start --prefix ../btc_frontend/ | npm start",
-    "startfilman": "npm start --prefix ../btc_featurenav/"
-  },
-  "author": "",
-  "license": "MIT"
+    "startall": "set BROWSER=NONE&& npm start --prefix ../btc_frontend/ | npm start"
+  }
 }
