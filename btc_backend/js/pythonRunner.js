@@ -32,6 +32,7 @@ const getOptions = (feature, flag, target, user, sw, testSetId) => {
   }
 
   return {
+    pythonPath: config.get("Server.pythonPath"),
     args: argsList
   };
 }
