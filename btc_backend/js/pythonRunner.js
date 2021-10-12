@@ -33,6 +33,7 @@ const getOptions = (feature, flag, target, user, sw, testSetId) => {
 
   return {
     pythonPath: config.get("Server.pythonPath"),
+    pythonOptions: ["-u"], // get print results in real-time
     args: argsList
   };
 }
