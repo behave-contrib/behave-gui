@@ -45,8 +45,11 @@ const correctFeatureName = (feature) => {
   return feature;
 }
 
-const runWithCallback = (feature, flag, target, user, sw, callback, endCallback, testSetId=0) => {
+const runWithCallback = (feature, flag, target, user, sw, callback, endCallback, testSetId=0, userdata=null) => {
   const options = getOptions(correctFeatureName(feature), flag, target, user, sw, testSetId);
+  for(idx in userdata){
+    options.args.push("-D", userdata[idx])
+  }
 
   const shell = new PythonShell(runFeaturesPath, options);
   shell.on("message", function (message) {

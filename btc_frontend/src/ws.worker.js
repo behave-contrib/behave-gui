@@ -84,7 +84,8 @@ onmessage = (e) => {
       feature: e.data.feature,
       target: e.data.target,
       user: e.data.user,
-      sw: e.data.sw
+      sw: e.data.sw,
+      data: e.data
     });
   }
 

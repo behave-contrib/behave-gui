@@ -243,7 +243,8 @@ io.on("connection", socket => {
           }
         },
         endRoutine,
-        testSetId
+        testSetId,
+        runCmd.D
       );
     } catch (exception) {
       console.log(`[${new Date()}]: Socket-level exception: ${exception}`);
