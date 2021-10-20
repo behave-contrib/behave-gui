@@ -13,7 +13,7 @@ def step_impl(context):
 
 @step(u'I read the readme')
 def step_impl(context):
-    url = "https://raw.githubusercontent.com/python/cpython/main/README.rst"
+    url = "https://raw.githubusercontent.com/behave/behave/master/README.rst"
     readme = urlopen(url)
     msg = "".join(next(readme).decode("utf-8") for _x in range(10))
     print(msg)
