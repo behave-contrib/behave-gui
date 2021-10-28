@@ -1,6 +1,6 @@
 {
-  "name": "BTC Frontend",
-  "short_name": "BTC",
+  "name": "Behave-gui Frontend",
+  "short_name": "Behave-gui",
   "scope": "/",
   "start_url": "/",
   "icons": [

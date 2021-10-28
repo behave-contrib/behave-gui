@@ -45,7 +45,7 @@ class FeatureHolder extends Component {
       clearSemaphore: ""
     };
 
-    this.documentTitle = "btc - gui"
+    this.documentTitle = "Behave - gui"
     this.editor = React.createRef();
     this.hostname = window.location.hostname;
   }
@@ -86,7 +86,7 @@ class FeatureHolder extends Component {
       }).then(x => {
         x.json().then(j => {
           if (j.filter) { //Array
-            toastr.error(j[0], "Catastrophic parsing error crashing all of BTC!", {
+            toastr.error(j[0], "Catastrophic parsing error crashing all of Behave - gui!", {
               closeButton: true,
               extendedTimeOut: 0,
               timeOut: 0,

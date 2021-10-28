@@ -1,6 +1,6 @@
 {
-  "name": "btc-gui",
-  "description": "Btc frontend",
+  "name": "behave-gui-frontend",
+  "description": "Behave-gui frontend",
   "version": "0.1.0",
   "author": "James Westfall <james.vestfall@gmail.com> for Tomra Systems ASA (https://www.tomra.com)",
   "license": "MIT",

@@ -3,11 +3,11 @@ const bunyan = require("bunyan");
 
 const createLogger = () =>{
     const logger = bunyan.createLogger({
-        name: "btc_backend",
+        name: "behave-gui-backend",
         streams: [
           {
             level: "trace",
-            path: "btc-backend.log"
+            path: "backend.log"
           }
         ]
       });

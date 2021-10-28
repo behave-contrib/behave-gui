@@ -15,7 +15,7 @@ Behave-Gui is fully compatible with standard Behave folder structures and config
   - Behave-Gui provides an informal environment for editing and developing feature tests suitable for non-technical users uncomfortable with developer IDEs.
 
 ## Screenshot
-![Behave-Gui screenshot](btc.png)
+![Behave-Gui screenshot](behave-gui.png)
 
 ## Dependencies
 
@@ -29,15 +29,15 @@ Behave-Gui also requires [Node.js](https://nodejs.org) for its runtime and for t
 
 ## Installation
 
-The Behave-Gui top-level folder is divided into two subfolders, `btc_backend` and `btc_frontend`. Execute the following `npm` command in each of the two folders to install:
+The Behave-Gui top-level folder is divided into two subfolders, `backend` and `frontend`. Execute the following `npm` command in each of the two folders to install:
 
 ```bash
-btc_frontend$ npm install
-btc_backend$ npm install
+frontend$ npm install
+backend$ npm install
 ```
 
 ## Configuration
-Default configuration options may be overridden if needed in the file `btc_backend\config\default.json`:
+Default configuration options may be overridden if needed in the file `backend\config\default.json`:
 ```json
 {
   "Server": {
@@ -52,7 +52,7 @@ The option "useSspi" enables [node-sspi](https://www.npmjs.com/package/node-sspi
 
 ## Startup
 
-From the `btc_backend` folder, run the following command to start both the front-end and backend:
+From the `backend` folder, run the following command to start both the front-end and backend:
 ```bash
 npm run startall
 ```
@@ -69,9 +69,9 @@ The above command will alow you to view and run an example test in your web brow
 - You can send in url parameters `target` and `sw` which are displayed in the GUI and exposed in Behave via the config.userdata dictionary. See the `-D` option in the Behave [Command-Line Arguments](https://behave.readthedocs.io/en/stable/behave.html?#command-line-arguments) documentation.
 
 ## Troubleshooting
-If step definitions fail to load and you see an error like the following at the console, you need to set the path to your Python 3 executable in `btc_backend/config/default.json` (see 'Configuration', above):
+If step definitions fail to load and you see an error like the following at the console, you need to set the path to your Python 3 executable in `backend/config/default.json` (see 'Configuration', above):
 ```bash
-btc_backend/runFeatures.py", line 2, in <module>
+backend/runFeatures.py", line 2, in <module>
     import configparser
 ImportError: No module named configparser
 ```
