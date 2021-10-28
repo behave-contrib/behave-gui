@@ -63,7 +63,7 @@ The above command will alow you to view and run an example test in your web brow
 
 - You can find test steps used by other features by typing in "Search steps" type-ahead. Click on the black text to copy the step text. Click on the link to open the feature that uses the test step.
 - You can use the dropdown boxes to narrow your search.
-- You can use intelligent completion within a feature by typing a word and pressing ctrl+spacebar. A dropdown list will appear with matching steps. Dropdown boxes also work with intelligent completion.
+- You can use intelligent completion within a feature by typing a word and pressing ctrl+spacebar. An auto-complete list will appear with matching steps. The dropdown filters also work with intelligent completion.
 - When you edit a file, a save feature button will appear allowing you to save your changes.
 - Pressing "Run feature" will execute your feature. You will see log output under the "Console log" tab.
 - You can send in url parameters `target` and `sw` which are displayed in the GUI and exposed in Behave via the config.userdata dictionary. See the `-D` option in the Behave [Command-Line Arguments](https://behave.readthedocs.io/en/stable/behave.html?#command-line-arguments) documentation.
