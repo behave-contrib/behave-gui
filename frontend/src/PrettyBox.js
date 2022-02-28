@@ -17,19 +17,17 @@ class PrettyBox extends PureComponent {
     }
 
     componentDidMount() {
-        hljs.highlightElement(this.codeBlock.current);
+        hljs.highlightAll();
     }
 
     render() {
         return (
             <div>
-                <pre className="prettyprint"
-                    ref={this.codeBlock}
-                >
-                    <div>
+                <pre className="prettyprint">
+                    <code className="python">
                         {this.props.fileName + "\n"}
                         {this.props.code}
-                    </div>
+                    </code>
                 </pre>
             </div>
         );
