@@ -68,6 +68,18 @@ The above command will alow you to view and run an example test in your web brow
 - Pressing "Run feature" will execute your feature. You will see log output under the "Console log" tab.
 - You can send in url parameters `target` and `sw` which are displayed in the GUI and exposed in Behave via the config.userdata dictionary. See the `-D` option in the Behave [Command-Line Arguments](https://behave.readthedocs.io/en/stable/behave.html?#command-line-arguments) documentation.
 
+## Integrate with your own repo
+
+You can delete the example Behave ```features``` folder in this repo and replace it with the ```features``` folder from you own repo like this:
+```
+git clone https://github.com/behave-contrib/behave-gui.git
+cd ./behave-gui/backend
+rm -fr ./features
+ln -s ~/myrepo/features/
+```
+
+By this simple means you can view your features alongside their step implementations using behave-gui. Note: for this to work, you may need to install behave@1.2.7 directly from github to overcome issue #675: Feature files cannot be found within symlink directories (provided by: smadness, pull #680). See [CHANGES.rst](https://github.com/behave/behave/blob/main/CHANGES.rst)
+
 ## Troubleshooting
 If step definitions fail to load and you see an error like the following at the console, you need to set the path to your Python 3 executable in `backend/config/default.json` (see 'Configuration', above):
 ```bash
