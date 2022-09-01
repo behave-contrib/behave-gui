@@ -1,6 +1,6 @@
 {
   "Server": {
-    "pythonPath": "python3",
+    "pythonPath": "python",
     "useSspi": false
   }
 }
