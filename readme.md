@@ -71,7 +71,7 @@ The above command will alow you to view and run an example test in your web brow
 
 ## Integrate with your own repo
 
-You can delete the example Behave ```features``` folder in this repo and replace it with the ```features``` folder from you own repo like this:
+You can delete the example Behave ```features``` folder in this repo and replace it with the ```features``` folder from your own repo like this:
 ```
 git clone https://github.com/behave-contrib/behave-gui.git
 cd ./behave-gui/backend
