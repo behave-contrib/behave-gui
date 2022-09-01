@@ -4,7 +4,8 @@ Copyright (c) 2021-present Tomra Systems ASA.
 
 Behave-Gui is a web interface for Python [Behave](https://behave.readthedocs.io/en/stable/). It:
   - displays test step implementations alongside feature files
-  - helps you write new feature files by letting you search for existing test step implementations to see how they are used in other feature files 
+  - helps you write new feature files by letting you search for existing test step implementations
+  - provides a link with search results to go see how existing test step implementations are used in other feature files 
   - lets you run a feature file with a full console log
 
 Behave-Gui is fully compatible with standard Behave folder structures and configuration (features, test steps and configuration files).
