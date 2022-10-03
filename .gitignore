@@ -1,4 +1,4 @@
-workspace.code-workspace
 .vscode/
-env/
 backend/public/
+env/
+workspace.code-workspace
