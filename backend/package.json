@@ -19,10 +19,13 @@
     "rxjs": "^7.4.0",
     "socket.io": "^2.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "shx": "^0.3.4"
+  },
   "optionalDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startall": "set BROWSER=NONE&& npm start --prefix ../frontend/ | npm start"
+    "startall": "set BROWSER=NONE&& npm start --prefix ../frontend/ | npm start",
+    "buildlocal": "shx cp -r ../frontend/build ./public/"
   }
 }
