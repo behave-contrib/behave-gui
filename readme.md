@@ -47,7 +47,7 @@ Default configuration options may be overridden if needed in the file `backend\c
   }
 }
 ```
-If required, adjust the path to your Python executable in the property "pythonPath"
+If required, adjust the path to your Python executable in the property "pythonPath" (e.g. "python3")
 
 The option "useSspi" enables [node-sspi](https://www.npmjs.com/package/node-sspi) authentification against Active Directory when Behave-Gui is run on a Windows host.
 
@@ -80,6 +80,21 @@ ln -s ~/myrepo/features/
 ```
 
 By this simple means you can view your features alongside their step implementations using behave-gui. Note: for this to work, you may need to install behave@1.2.7 directly from github to overcome issue #675: Feature files cannot be found within symlink directories (provided by: smadness, pull #680). See [CHANGES.rst](https://github.com/behave/behave/blob/main/CHANGES.rst)
+
+## Run on a single port
+
+The compiled application can be served entirely from the 8081 port, eliminating the need for the additional developmement server on port 3000. To enable this, executed the folllowing commands to compile and start the application:
+```
+cd ./behave-gui/frontend
+npm install
+npm run-script build
+cd ../backend
+npm install
+npm run-script buildlocal
+node server.js
+```
+
+You can then access the example test in your web browser at: <http://localhost:8081/?feature=/features/examples/documentation.feature>
 
 ## Troubleshooting
 If step definitions fail to load and you see an error like the following at the console, you need to set the path to your Python 3 executable in `backend/config/default.json` (see 'Configuration', above):
