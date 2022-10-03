@@ -58,7 +58,7 @@ From the `backend` folder, run the following command to start both the front-end
 npm run startall
 ```
 
-The above command will alow you to view and run an example test in your web browser at: <http://localhost:3000/?feature=/features/examples/documentation.feature>
+The above command will alow you to view and run an example test in your web browser at: <http://localhost:8081/?feature=/features/examples/documentation.feature>
 
 ## Usage
 

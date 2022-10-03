@@ -42,6 +42,11 @@ if (config.Server.useSspi) {
 
 app.use(cors());
 app.use(express.static("./"));
+
+if(config.Server.frontEndPath){
+    app.use(express.static(config.Server.frontEndPath));
+}
+
 if(config.Server.extensionPackage){
   btcExtension.registerAppServices(app)
 }
