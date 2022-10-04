@@ -2,6 +2,6 @@
   "Server": {
     "pythonPath": "python",
     "useSspi": false,
-    "frontEndPath": "public/build"
+    "frontEndPath": "public"
   }
 }
