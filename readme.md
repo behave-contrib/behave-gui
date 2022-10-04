@@ -47,7 +47,7 @@ Default configuration options may be overridden if needed in the file `backend\c
   }
 }
 ```
-If required, adjust the path to your Python executable in the property "pythonPath"
+If required, adjust the path to your Python executable in the property "pythonPath" (e.g. "python3")
 
 The option "useSspi" enables [node-sspi](https://www.npmjs.com/package/node-sspi) authentification against Active Directory when Behave-Gui is run on a Windows host.
 
@@ -59,6 +59,19 @@ npm run startall
 ```
 
 The above command will alow you to view and run an example test in your web browser at: <http://localhost:3000/?feature=/features/examples/documentation.feature>
+
+## Start on a single port
+
+The compiled application can be served entirely from the 8081 port, eliminating the need for the additional developmement server on port 3000. To enable this, executed the folllowing commands to compile and start the application (Linux example, the same approach also works for Windows):
+```bash
+cd ./behave-gui/frontend
+npm run-script build
+cd ../backend
+npm run-script buildlocal
+node server.js
+```
+
+You can then access the example test in your web browser at: <http://localhost:8081/?feature=/features/examples/documentation.feature>
 
 ## Usage
 

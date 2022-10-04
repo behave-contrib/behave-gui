@@ -42,6 +42,14 @@ if (config.Server.useSspi) {
 
 app.use(cors());
 app.use(express.static("./"));
+
+if(config.Server.frontEndPath){
+    front_end_abs_path = path.join(__dirname, config.Server.frontEndPath)
+    if(fs.existsSync(front_end_abs_path)){
+        app.use(express.static(config.Server.frontEndPath));
+    }
+}
+
 if(config.Server.extensionPackage){
   btcExtension.registerAppServices(app)
 }

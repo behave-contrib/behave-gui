@@ -1,6 +1,7 @@
 {
   "Server": {
     "pythonPath": "python",
-    "useSspi": false
+    "useSspi": false,
+    "frontEndPath": "public"
   }
 }
