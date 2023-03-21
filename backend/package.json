@@ -7,7 +7,7 @@
   "main": "server.js",
   "dependencies": {
     "bunyan": "^1.8.15",
-    "config": "^3.3.8",
+    "config": "^3.3.9",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "io-session-handler": "^1.0.74",
@@ -16,7 +16,7 @@
     "node-cache": "^5.1.2",
     "ps-node": "^0.1.6",
     "python-shell": "^3.0.1",
-    "rxjs": "^7.5.7",
+    "rxjs": "^7.8.0",
     "socket.io": "^2.4.1"
   },
   "devDependencies": {
