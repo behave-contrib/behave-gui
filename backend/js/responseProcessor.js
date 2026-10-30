@@ -10,6 +10,7 @@ const getNormalizedJson = (jsonData) => {
     if (jsonData.match(badCommaRegex)) {
         jsonData = jsonData.replace(badCommaRegex, "]");
     }
+    jsonData = jsonData.substr(jsonData.indexOf("["));
     let json = "";
     try {
         json = JSON.parse(jsonData);
